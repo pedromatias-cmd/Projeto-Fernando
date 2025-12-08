@@ -1,0 +1,30 @@
+=== REGISTRO ===
+Data: 08/12/2025 19:48:07
+Remetente: SOCORRO
+Destinatário: PELO AMOR DE DEUS 
+Endereço: RUA DO SOCORRO
+Produto: TELEVISÃO
+Peso: 2 KG
+Código de Rastreio: 1273912837193
+Caminhão: WOLKSVAGEM
+Funcionário: PAULINHO
+Entrada: 10:00
+Saída: 10:30
+KM Inicial: 12
+KM Final: 30
+-----------------------------
+=== REGISTRO ===
+Data: 08/12/2025 20:05:14
+Remetente: JPAXX
+Destinatário: PEDRO
+Endereço: RUA SÃO PAILO
+Produto: TELEVISÃO 
+Peso: 3 KG
+Código de Rastreio: 12345566
+Caminhão: JUNINHO
+Funcionário: PAULINHO 
+Entrada: 12:00
+Saída: 13:00 
+KM Inicial: 10
+KM Final: 50
+-----------------------------
