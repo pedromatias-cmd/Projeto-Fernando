@@ -28,3 +28,18 @@ Saída: 13:00
 KM Inicial: 10
 KM Final: 50
 -----------------------------
+=== REGISTRO ===
+Data: 08/12/2025 20:28:36
+Remetente: AA
+Destinatário: AAB
+Endereço: Rua A
+Produto: 23
+Peso: 11
+Código de Rastreio: 121212
+Caminhão: GUgu
+Funcionário: Alias
+Entrada: 12:30
+Saída: 10:80
+KM Inicial: 100
+KM Final: 200
+-----------------------------

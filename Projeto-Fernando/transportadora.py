@@ -8,9 +8,6 @@ ctk.set_default_color_theme("blue")
 ARQUIVO_DADOS = "dados_transportadora.txt"
 
 
-# ==========================================================
-# FUNÇÃO --- SALVAR REGISTRO
-# ==========================================================
 def salvar_dados():
     dados = {
         "remetente": entry_remetente.get(),
@@ -60,9 +57,6 @@ def salvar_dados():
         entry.delete(0, ctk.END)
 
 
-# ==========================================================
-# LER ARQUIVO COMPLETO
-# ==========================================================
 def carregar_registros():
     try:
         with open(ARQUIVO_DADOS, "r", encoding="utf-8") as arquivo:
@@ -70,10 +64,6 @@ def carregar_registros():
     except FileNotFoundError:
         return ""
 
-
-# ==========================================================
-# TELA PARA VISUALIZAR REGISTROS
-# ==========================================================
 def ver_registros():
     janela = Toplevel(app)
     janela.title("Registros Salvos")
@@ -91,10 +81,6 @@ def ver_registros():
     conteudo = carregar_registros()
     texto.insert(END, conteudo if conteudo else "Nenhum registro encontrado.")
 
-
-# ==========================================================
-# FUNÇÃO --- ATUALIZAR REGISTRO (agora por DESTINATÁRIO)
-# ==========================================================
 def atualizar_registro():
     destinatario = simpledialog.askstring("Atualizar", "Digite o nome do Destinatário:")
 
@@ -161,10 +147,6 @@ def atualizar_registro():
 
     messagebox.showinfo("Sucesso", "Registro atualizado com sucesso!")
 
-
-# ==========================================================
-# FUNÇÃO --- REMOVER REGISTRO
-# ==========================================================
 def remover_registro():
     codigo = simpledialog.askstring("Remover", "Digite o Código de Rastreio do registro:")
 
@@ -197,10 +179,6 @@ def remover_registro():
 
     messagebox.showinfo("Sucesso", "Registro removido!")
 
-
-# ==========================================================
-# INTERFACE
-# ==========================================================
 app = ctk.CTk()
 app.title("Sistema da Transportadora")
 app.geometry("760x820")
@@ -238,7 +216,6 @@ entradas = entries
 avisos = ctk.CTkLabel(app, text="")
 avisos.pack(pady=5)
 
-# ------- BOTÕES -------
 ctk.CTkButton(app, text="Salvar Registro", command=salvar_dados).pack(pady=5)
 ctk.CTkButton(app, text="Ver Registros", command=ver_registros).pack(pady=5)
 ctk.CTkButton(app, text="Atualizar Registro", command=atualizar_registro).pack(pady=5)
